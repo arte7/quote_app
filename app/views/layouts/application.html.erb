@@ -2,13 +2,28 @@
 <html>
   <head>
     <title>PageApp</title>
-    <%= csrf_meta_tags %>
-
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= csrf_meta_tags %>
   </head>
 
   <body>
-    <%= yield %>
+    <header>
+      <div class="col-xs-3">
+        LOGO
+      </div>
+      <div class="col-xs-4">
+        puking quotes which haven't even been funny in the moment they where made.
+      </div>
+      <div class="col-xs-5">
+        <%= link_to 'Contribute', '#' %>
+        <%= link_to 'About', '#' %>
+      </div>
+    </header>
+
+    <br class="clear" />
+
+  <%= yield %>
+
   </body>
 </html>
