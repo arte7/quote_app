@@ -1,37 +1,45 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>PageApp</title>
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <%= csrf_meta_tags %>
-  </head>
+<head>
+  <title>PageApp</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  <%= csrf_meta_tags %>
+</head>
 
-  <body>
-    <header>
-      <div class="col-xs-3">
-        <div class="circle">
-          <br />
-          You know
-          <br />
-          you need
-          <br />
-          to code
-        </div>
+<body>
+  <header>
+    <div class="col-xs-3">
+      <div class="circle">
+        <br />
+        You know
+        <br />
+        you need
+        <br />
+        to code
       </div>
-      <div class="col-xs-4 slogan">
-        puking quotes which haven't even been funny in the moment they where made.
-      </div>
-      <div class="col-xs-5 links">
-        <%= link_to 'Contribute', '#' %>
-        <%= link_to 'About', '#' %>
-      </div>
-      <hr />
-    </header>
+    </div>
+    <div class="col-xs-4 slogan">
+      puking quotes which haven't even been funny in the moment they where made.
+    </div>
+    <div class="col-xs-5 links">
+      <%= link_to 'Contribute', '#' %>
+      <%= link_to 'About', '#' %>
+    </div>
+  </header>
+  <hr />
 
-    <br class="clear" />
+  <br class="clear" />
 
-  <%= yield %>
+  <div class="container">
+    <%= yield %>
+  </div>
 
-  </body>
+  <div class="footer">
+    <div class="container">
+      <p class="text-muted">Place sticky footer contend here</p>
+    </div>
+  </div>
+      
+</body>
 </html>

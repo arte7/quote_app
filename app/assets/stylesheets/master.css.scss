@@ -1,6 +1,8 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
-@import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300);
+@import url('https://fonts.googleapis.com/css?family=Arimo:400,400i,700|Fredericka+the+Great');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300i,700');
+@import url('https://fonts.googleapis.com/css?family=Arsenal:400,400i,700,700i');
 
 .clear {
   clear:both;
@@ -27,13 +29,16 @@
 }
 
 .slogan {
-  font-family: "Palatino Linotype", Palatino, Palladio, "URW Palladio L",
+  font-family: 'Fredericka the Great', cursive;
+  padding-top: 26px;
+  font-size: 25px;
+  /*font-family: "Palatino Linotype", Palatino, Palladio, "URW Palladio L",
   "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter",
   "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow",
   "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L",
   Georgia, serif;
   font-style: italic;
-  padding-top: 26px;
+  padding-top: 26px; */
 }
 
 .links {
@@ -41,9 +46,17 @@
 }
 
 .links a {
-  color:black;
-  font-size: 25px;
+  color: grey;
+  font-size: 20px;
   border-bottom: 1px solid #dfdfdf;
+  font-family: 'Arimo', sans-serif;
+  font-weight: lighter;
+}
+
+a:hover {
+  color: grey;
+  font-size: 150%;
+  font-weight: bold;
 }
 
 header {
@@ -56,6 +69,8 @@ hr {
 
 h1 {
   font-family: 'Open Sans Condensed', sans-serif;
+  font-weight:  normal;
+  font-size: 48px;
 }
 
 h2 {
