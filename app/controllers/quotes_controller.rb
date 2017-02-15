@@ -1,6 +1,6 @@
 class QuotesController < ApplicationController
   def index
-    @quote = Quote.order("RANDOM()").first
+    @quotes = Quote.order("RAND()").first
   #  @quotes = Quote.all
   #hat alle quotes gezeigt, aber nicht die abfrage box
   end
