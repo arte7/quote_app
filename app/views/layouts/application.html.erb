@@ -2,8 +2,8 @@
 <html>
 <head>
   <title>PageApp</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
 
@@ -38,7 +38,7 @@
   <div class="footer">
     <div class="container">
       <div class="col-xs-6">
-        This isn't enough, I need more
+        <%= link_to "This isn't enough, I need more", "#", class: 'next-quote' %>
       </div>
       <div class="col-xs-6 footer-blurb">
         Proudly hacked by Pia in Hamburg, Germany
