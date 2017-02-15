@@ -6,6 +6,7 @@ class QuotesController < ApplicationController
   end
 
   def new
+    @quote = Quote.new
   end
   #reserves a column for new quotes in our database
 end

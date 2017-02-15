@@ -48,6 +48,7 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'bootstrap-sass', '~> 3.3.5.1'
+  gem 'simple_form'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
