@@ -5,11 +5,6 @@ class QuotesController < ApplicationController
   #hat alle quotes gezeigt, aber nicht die abfrage box
   end
 
-  def new
-    @quote = Quote.new
-  end
-  #reserves a column for new quotes in our database
-
   def create
     @quote = Quote.create(quote_params)
     if @quote.invalid?
